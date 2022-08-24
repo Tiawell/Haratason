@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e205963f1f330345804f184b9245447, type: 3}
+  m_Name: Fireball
+  m_EditorClassIdentifier: 
+  _name: Fireball
+  _description: "\u041F\u0438\u0443-\u043F\u0438\u0443! \u041F\u0438\u0443-\u043F\u0438\u0443!
+    \u041F\u0438\u0443-\u043F\u0438\u0443! \u041F\u0438\u0443-\u043F\u0438\u0443!
+    \u041F\u0438\u0443-\u043F\u0438\u0443! \u041F\u0438\u0443-\u043F\u0438\u0443!
+    \u041F\u0438\u0443-\u043F\u0438\u0443! \u041F\u0438\u0443-\u043F\u0438\u0443!
+    \u041F\u0438\u0443-\u043F\u0438\u0443! "
+  _type: 1
+  _image: {fileID: 21300000, guid: 450253a0fa028704ab51c57ab21ccdb1, type: 3}
+  _border: {fileID: 21300000, guid: f3444c2fe3f4259429b6d1f3eedf27a1, type: 3}
+  _isElite: 0
+  _frame: {fileID: 0}
+  _values:
+  - _resource: {fileID: 11400000, guid: c37f1a7a1b494d041bbdef7aac29a6f2, type: 2}
+    _value: 6
+    _maxValue: 6

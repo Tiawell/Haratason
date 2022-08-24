@@ -23,6 +23,10 @@ public class CardResourceText : MonoBehaviour, IOnResourceChange
             {
                 _text.text = maxValue.ToString();
             }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
     public void OnResourceChange(IOnResourceChange.Context context)

@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class ResourceContainer : MonoBehaviour
 {
-    [Serializable]
-    private class StartingValue
-    {
-        public Resource _resource;
-        public int _value;
-        public int _maxValue;
-    }
     private class Value
     {
         public int _value;
@@ -33,11 +26,11 @@ public class ResourceContainer : MonoBehaviour
             _deltaValue = delta;
         }
     }
-    [SerializeField]
     private StartingValue[] _startingValues;
     private readonly Dictionary<Resource, Value> _values = new();
-    private void Awake()
+    public void SetValues(StartingValue[] values)
     {
+        _startingValues = values;
         foreach (var v in _startingValues)
             _values.Add(v._resource, new Value(v._value, v._maxValue));
     }
@@ -64,8 +57,6 @@ public class ResourceContainer : MonoBehaviour
             {
                 v._value = newValue;
                 SetContextAndInvoke(resource, newValue, v._maxValue, delta);
-                //IOnResourceChange.Context context = new(resource, newValue, v._maxValue, delta);
-                //EventBus.Invoke<IOnResourceChange, IOnResourceChange.Context>(l => l.OnResourceChange, context);
             }
         }
     }
