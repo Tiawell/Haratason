@@ -442,12 +442,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _creatureCardPrefab: {fileID: 7218114129725943821, guid: 599220614dafae847ab6b2f79e97a875, type: 3}
-  _spellCardPrefab: {fileID: 3466302658267201533, guid: 430663af0d84e1e4d9569472d32f465f, type: 3}
-  _weaponCardPrefab: {fileID: 0}
+  _minion: {fileID: 11400000, guid: 2592e0d4cdcac2840bc9bf609747ec50, type: 2}
   _cardData:
-  - {fileID: 11400000, guid: a7dc86fbae7f7754b90e463f9766fb7c, type: 2}
   - {fileID: 11400000, guid: 8360e97d0230f324ea28ea8a2aba319a, type: 2}
-  - {fileID: 11400000, guid: 27714407ffdc01f48963306d56bade2a, type: 2}
+  - {fileID: 11400000, guid: 8360e97d0230f324ea28ea8a2aba319a, type: 2}
   _canvas: {fileID: 780880918}
 --- !u!114 &1678766931
 MonoBehaviour:

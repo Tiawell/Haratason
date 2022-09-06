@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e205963f1f330345804f184b9245447, type: 3}
+  m_Name: Pluka
+  m_EditorClassIdentifier: 
+  _name: Pluka
+  _image: {fileID: 11400000, guid: 7c35d11c7257a5e4fbb2490cb63d4927, type: 2}
+  _type: {fileID: 11400000, guid: 2592e0d4cdcac2840bc9bf609747ec50, type: 2}
+  _rarity: {fileID: 11400000, guid: 406e0d9c78a3f6d41afd102237dc1dbf, type: 2}
+  _legendaryFrame: {fileID: 11400000, guid: af80949be4dcb8d438c8a0a69da42d44, type: 2}
+  _heroClass: {fileID: 11400000, guid: bff9c809e03e1f64db6986ebf4a44ca9, type: 2}
+  _minionType: {fileID: 11400000, guid: 5e2eec6345a0be049b5d56e13fa5bebe, type: 2}
+  _description: Nya!
+  _values:
+  - _resource: {fileID: 11400000, guid: c37f1a7a1b494d041bbdef7aac29a6f2, type: 2}
+    _value: 5
+    _maxValue: 5
+  - _resource: {fileID: 11400000, guid: 12753f4aaf2e8e142a8d9cda8763c925, type: 2}
+    _value: 10
+    _maxValue: 10
+  - _resource: {fileID: 11400000, guid: 3803d1120eea3f04c944b80fdd0eba2a, type: 2}
+    _value: 22
+    _maxValue: 22

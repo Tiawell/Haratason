@@ -11,15 +11,17 @@ public class Card : MonoBehaviour
     [SerializeField]
     private Image _border;
     [SerializeField]
-    private Image _frame;
+    private Image _rarity;
+    [SerializeField]
+    private Image _legendaryFrame;
     [SerializeField]
     private TextMeshProUGUI _name;
     [SerializeField]
     private TextMeshProUGUI _description;
     [SerializeField]
+    private Image _typeFrame;
+    [SerializeField]
     private TextMeshProUGUI _type;
-
-    private CardType.TypeList _cardType;
 
     public void SetImage(Sprite sprite)
     {
@@ -29,16 +31,13 @@ public class Card : MonoBehaviour
     {
         _border.sprite = sprite;
     }
-    public void SetFrame(bool isElite, Sprite sprite)
+    public void SetRarity(Sprite sprite)
     {
-        if (isElite)
-        {
-            _frame.sprite = sprite;
-        }
-        else
-        {
-            _frame.gameObject.SetActive(false);
-        }
+        _rarity.sprite = sprite;
+    }
+    public void SetLegendaryFrame(Sprite sprite)
+    {
+        _legendaryFrame.sprite = sprite;
     }
     public void SetName(string text)
     {
@@ -48,12 +47,12 @@ public class Card : MonoBehaviour
     {
         _description.text = text;
     }
-    public void SetType(CardType.TypeList type)
+    public void SetTypeFrame(Sprite sprite)
     {
-        _cardType = type;
-        if(CardType.TypeTranslate.TryGetValue(type, out string text))
-        {
-            _type.text = text;
-        }
+        _typeFrame.sprite = sprite;
+    }
+    public void SetType(string text)
+    {
+        _type.text = text;
     }
 }

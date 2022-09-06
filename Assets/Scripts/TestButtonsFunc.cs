@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class TestButtonsFunc: MonoBehaviour
 {
-    public Card _creatureCardPrefab;
+    public Card _minionCardPrefab;
     public Card _spellCardPrefab;
     public Card _weaponCardPrefab;
+
+    public CardType _minion;
+    public CardType _spell;
+    public CardType _weapon;
+
     public CardData[] _cardData;
     public GameObject _canvas;
 
@@ -15,23 +20,24 @@ public class TestButtonsFunc: MonoBehaviour
     {
         for(int i = 0; i < _cardData.Length; i++)
         {
-            if(_cardData[i].GetCardType() == CardType.TypeList.Spell)
+            if (_cardData[i]._type == _minion)
+            {
+                _cardPrefab = _minionCardPrefab;
+            }
+            else if(_cardData[i]._type == _spell)
             {
                 _cardPrefab = _spellCardPrefab;
             }
-            else if (_cardData[i].GetCardType() == CardType.TypeList.Weapon)
+            else if (_cardData[i]._type == _weapon)
             {
-                //_cardPrefab = _weaponCardPrefab;
+                _cardPrefab = _weaponCardPrefab;
             }
-            else
-            {
-                _cardPrefab = _creatureCardPrefab;
-            }
+
             _card = _cardData[i].CreateCardInstance(_cardPrefab, _canvas);
-            _position = _card.transform.position;
-            _position.x += i * (_card.GetComponent<RectTransform>().sizeDelta.x + 100);
+            RectTransform transform = _card.GetComponent<RectTransform>();
+            _position = new Vector2(200, 500);
+            _position.x += i * (transform.sizeDelta.x * transform.localScale.x + 100);
             _card.transform.position = _position;
         }
-
     }
 }
